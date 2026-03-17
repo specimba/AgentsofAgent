@@ -1,0 +1,18 @@
+version: 0.1
+updates:
+  # 1. Update Python dependencies (pip)
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    # This groups small updates into one single PR to avoid spam
+    groups:
+      python-dependencies:
+        patterns:
+          - "*"
+
+  # 2. Update GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
