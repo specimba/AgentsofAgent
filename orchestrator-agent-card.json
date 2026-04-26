@@ -1,0 +1,1 @@
+{"name":"nexus-orchestrator-v2","version":"1.0.0","description":"NEXUS OS orchestrator","endpoints":{"invoke":"/invoke","health":"/health"},"capabilities":["task_routing"],"authentication":{"type":"api_key","header":"x-api-key"}}
