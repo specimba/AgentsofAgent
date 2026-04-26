@@ -1,0 +1,23 @@
+{
+  "name": "nexus-orchestrator-v2",
+  "version": "1.0.0",
+  "description": "NEXUS OS high-level planner and workflow coordinator. Routes tasks between agents using A2A when needed.",
+  "endpoints": {
+    "invoke": "/invoke",
+    "health": "/health"
+  },
+  "capabilities": [
+    "task_routing",
+    "agent_coordination",
+    "workflow_planning",
+    "multi_agent_orchestration"
+  ],
+  "authentication": {
+    "type": "api_key",
+    "header": "x-api-key"
+  },
+  "supported_models": ["gpt-5.4-pro-1"],
+  "contact": {
+    "name": "NEXUS OS Team"
+  }
+}
